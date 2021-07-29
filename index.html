@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Ico font -->
+    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link href="style.css" rel="stylesheet" />
+    <title>Teste listagem</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-light2 " >
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo_veja.png" alt="" class="img-fluid logoveja"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>            
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-row-reverse" style="width: 100%;">
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Podcasts</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Newsletters</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Revista</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Paginas Amarelas</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Radar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Previdência</a></li>          
+                        <li class="nav-item active"><a class="nav-link" href="#">Diálogos vazados </a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row" style="margin: 20px 0;">
+                <div class="col-md-8">    
+                    <h1>Últimas notícias</h1>                
+                    <div id=lista></div>      
+                    <div class="loading" >Carregando...</div>  
+                    <div style="margin: 0 auto; text-align: center;">
+                        <a onclick="carregarMais()" class="btmais"> Carregar mais </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quadrocinza"></div>
+                    <div class="quadrocinza"></div>
+                </div>
+            </div>
+       
+        </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
